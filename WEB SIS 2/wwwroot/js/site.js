@@ -2,13 +2,14 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your Javascript code.
-$('body').on('click', '.password-control', function () {
-	if ($('#password-input').attr('type') == 'password') {
-		$(this).addClass('view');
-		$('#password-input').attr('type', 'text');
-	} else {
-		$(this).removeClass('view');
-		$('#password-input').attr('type', 'password');
-	}
-	return false;
-});
+document.getElementById('slider-next').onclick = sliderNext;
+var next = 0;
+
+function sliderNext() {
+    var strip = document.getElementById('strip');
+    next = next - 630;
+    if (next < -4410) {
+        next = 0;
+    }
+    strip.style.left = next + 'px';
+}
