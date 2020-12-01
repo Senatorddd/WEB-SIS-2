@@ -124,7 +124,9 @@ body {
 .reg-tex{
     color: white;
 }
-
+.card-color {
+    color: black;
+}
 /*Слайдер*/
 .slider_text {
     font-family: "Oswald", sans-serif;
@@ -185,5 +187,4 @@ body {
     font-size: 70px;
     text-align: center;
 }
-
 

@@ -15,6 +15,7 @@ using SIS.Services;
 using FGames.Services;
 using Microsoft.EntityFrameworkCore;
 using WEB_SIS_2.Models;
+using WEB_SIS_2.Models2;
 namespace WEB_SIS_2
 {
     public class Startup
@@ -35,6 +36,7 @@ namespace WEB_SIS_2
             services.AddRazorPages();
             services.AddDbContext<LoginDBContext>(ops => ops.UseSqlServer("Server=(localdb)\\MSSQLLocalDB; Database=Login; Trusted_Connection=True; MultipleActiveResultSets=true"));
             services.AddSession();
+            services.AddDbContext<ReviewDBContext>(ops => ops.UseSqlServer("Server=(localdb)\\MSSQLLocalDB; Database=Rew; Trusted_Connection=True; MultipleActiveResultSets=true"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
