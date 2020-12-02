@@ -12,13 +12,13 @@
     <div><label class="control-label">Password: <input type="password" class="form-control" id="password-input" maxlength="25" placeholder="enter password" name="password" /><br /></label></div>
     <input type="submit" value="Login" class="btn btn-light" />
 </form>
-
+<br />
 @if (Model.User != null)
     @Model.User.Login
 <br />
 @if (Model.User != null)
     @Model.User.Password
-
+<br />
 <div>
-    <a asp-page="Index">Go to Home Page</a>
+    <a asp-page="Index">Confirm</a>
 </div>

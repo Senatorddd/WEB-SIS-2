@@ -88,6 +88,12 @@ body {
     margin-bottom: 100px;
 }
 
+.home {
+    background-image: url('../images2/Banner.jpg');
+    width:100%;
+    height:100%;
+}
+
 .img-logo {
     width: 8%;
 }
@@ -188,3 +194,6 @@ body {
     text-align: center;
 }
 
+.Rew{
+    background-color:black;
+}
